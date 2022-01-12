@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.ConsoleApp", "MarsRover.ConsoleApp\MarsRover.ConsoleApp.csproj", "{49E28085-FB55-4EDF-A9C4-692CC32042C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.Core", "MarsRover.Core\MarsRover.Core.csproj", "{839FA2CE-6516-410A-A437-272219B77F6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.Common", "MarsRover.Common\MarsRover.Common.csproj", "{98061C17-61B4-4FA5-BDF5-0FCFCEE25D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Test", "MarsRover.Test\MarsRover.Test.csproj", "{E243F7DE-6DD6-448C-8054-2A6275DFEA18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49E28085-FB55-4EDF-A9C4-692CC32042C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E28085-FB55-4EDF-A9C4-692CC32042C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E28085-FB55-4EDF-A9C4-692CC32042C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E28085-FB55-4EDF-A9C4-692CC32042C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839FA2CE-6516-410A-A437-272219B77F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839FA2CE-6516-410A-A437-272219B77F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839FA2CE-6516-410A-A437-272219B77F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839FA2CE-6516-410A-A437-272219B77F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98061C17-61B4-4FA5-BDF5-0FCFCEE25D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98061C17-61B4-4FA5-BDF5-0FCFCEE25D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98061C17-61B4-4FA5-BDF5-0FCFCEE25D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98061C17-61B4-4FA5-BDF5-0FCFCEE25D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E243F7DE-6DD6-448C-8054-2A6275DFEA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E243F7DE-6DD6-448C-8054-2A6275DFEA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E243F7DE-6DD6-448C-8054-2A6275DFEA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E243F7DE-6DD6-448C-8054-2A6275DFEA18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB9512ED-209C-4DC0-BFF8-BC2580894D74}
+	EndGlobalSection
+EndGlobal
