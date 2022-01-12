@@ -34,17 +34,14 @@ namespace MarsRover.ConsoleApp
                         var roverCommandInput = Console.ReadLine();
 
                         var rover = serviceProvider.GetService<IRover>();
-
                         rover.Initialize(roverPositionInput, roverCommandInput, plateau);
-                        plateau.PlateauObjects.Add(rover);
-
-
+                        
                         Console.WriteLine("Do you want to add more Rover?(Y)");
                         string answer = Console.ReadLine();
                         addMoreRover = !string.IsNullOrWhiteSpace(answer) && answer.ToLower() == "y";
                     } while (addMoreRover);
 
-                    //Her rover nesnesinin farklı hızı olabileceğini düşünerek Task ile yapıldı.
+                    //Her rover nesnesinin farklı hızı olabileceği düşünerek Task ile yapıldı.
                     foreach (var rover in plateau.PlateauObjects)
                     {
                         tasks.Add(Task.Factory.StartNew(() =>

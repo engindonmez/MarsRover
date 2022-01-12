@@ -8,7 +8,7 @@ namespace MarsRover.Common.Exceptions
 {
     public class CrachException : Exception
     {
-        public CrachException(int x, int y) : base($"Collision occurred at {x},{y} position.")
+        public CrachException(int x, int y) : base($"There was an crash at the {x},{y} position.")
         {
             X = x;
             Y = y;

@@ -30,6 +30,7 @@ namespace MarsRover.Core.Objects
             this.Plateau = plateau;
             this.Position.Initialize(position);
             CommandFactory.ParseCommandList(commandList, this.Commands);
+            this.Plateau.PlateauObjects.Add(this);
         }
 
         public void Process()
