@@ -37,7 +37,7 @@ namespace MarsRover.Core.Objects
             foreach (var command in this.Commands)
             {
                 command.Process(this.Position);
-                CheckRoverPlateauBoundaries();
+                CheckRoverPlateauLimit();
                 CheckCrash();
             }
         }
@@ -50,16 +50,16 @@ namespace MarsRover.Core.Objects
         /// <summary>
         /// Check rover is at the valid plateau boundaries
         /// </summary>
-        private void CheckRoverPlateauBoundaries()
+        private void CheckRoverPlateauLimit()
         {
             if (this.Position.X > this.Plateau.XLength || this.Position.X < 0)
             {
-                throw new OutOfBoundaryException(this.Plateau.XLength, this.Position.X, "X");
+                throw new OutOfLimitException(this.Plateau.XLength, this.Position.X, "X");
             }
 
             if (this.Position.Y > this.Plateau.YLength || this.Position.Y < 0)
             {
-                throw new OutOfBoundaryException(this.Plateau.YLength, this.Position.Y, "Y");
+                throw new OutOfLimitException(this.Plateau.YLength, this.Position.Y, "Y");
             }
         }
 

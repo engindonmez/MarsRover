@@ -2,10 +2,10 @@
 
 namespace MarsRover.Common.Exceptions
 {
-    public class OutOfBoundaryException : Exception
+    public class OutOfLimitException : Exception
     {
-        public OutOfBoundaryException(int limit, int attempted, string plane)
-            : base($"Out of boundary on plane {plane}. (Plato's limit in the {plane} plane: {limit}, Attempted position in the X plane: {attempted})")
+        public OutOfLimitException(int limit, int attempted, string plane)
+            : base($"Out of limit on plane {plane}. (Plato's limit in the {plane} plane: {limit}, Attempted position in the X plane: {attempted})")
         {
             Limit = limit;
             Attempted = attempted;
