@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MarsRover.Common.Exceptions;
 using MarsRover.Core.Commands.Interfaces;
 using MarsRover.Core.Objects.Interfaces;
 using MarsRover.Core.Factories;
@@ -55,12 +54,12 @@ namespace MarsRover.Core.Objects
         {
             if (this.Position.X > this.Plateau.XLength || this.Position.X < 0)
             {
-                throw new OutOfLimitException(this.Plateau.XLength, this.Position.X, "X");
+                throw new System.Exception($"Out of limit on plane X. Plato's limit in the X plane: {this.Plateau.XLength}, Attempted position in the X plane: {this.Position.X}");
             }
 
             if (this.Position.Y > this.Plateau.YLength || this.Position.Y < 0)
             {
-                throw new OutOfLimitException(this.Plateau.YLength, this.Position.Y, "Y");
+                throw new System.Exception($"Out of limit on plane Y. Plato's limit in the Y plane: {this.Plateau.YLength}, Attempted position in the Y plane: {this.Position.Y}");
             }
         }
 
@@ -71,7 +70,7 @@ namespace MarsRover.Core.Objects
         {
             if (this.Plateau.PlateauObjects.Count(po => po.Position.X == this.Position.X && po.Position.Y == this.Position.Y) > 1)
             {
-                throw new CrachException(this.Position.X, this.Position.Y);
+                throw new System.Exception($"There was an crash at the {this.Position.X},{this.Position.Y} position.");
             }
         }
         #endregion
